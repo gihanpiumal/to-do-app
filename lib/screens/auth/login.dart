@@ -42,6 +42,10 @@ class _LoginState extends State<Login> {
                 width: 400,
                 height: 300,
               ),
+              const SizedBox(
+                height: 39,
+              ),
+              // CustomTextfield(hintText: "Email", controller: ),
             ],
           ),
         ),
