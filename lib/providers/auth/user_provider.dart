@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
 
 import '../../controllers/auth_controller.dart';
 import '../../models/objects.dart';
@@ -34,7 +33,6 @@ class UserProvider extends ChangeNotifier {
 
       await AuthController().fetchUserData(id).then((value) {
         if (value != null) {
-          Logger().w(value.email);
           _userModel = value;
           notifyListeners();
 
